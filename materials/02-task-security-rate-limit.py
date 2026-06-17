@@ -14,18 +14,12 @@ be told that something is wrong.
 
 ## What to do
 
-1. Run the starter below. The aggregator keeps printing values from the
-   well-behaved sensors, but it has no way to tell that the stalled
-   sensor has gone silent — its silence is invisible to the consumer.
-   The operator never finds out that one of the three sensors is dead.
-2. Hand the code and the observed symptom to the AI assistant. Phrase
-   the question yourself based on the symptom — do not pre-suppose the
-   fix.
-3. Discuss the protection strategy with the assistant before any code is
-   written. Make sure you understand *why* the chosen mechanism works.
-4. Implement the protection **inside the aggregator**: a per-sensor
-   timeout, a warning log naming the affected sensor when the timeout
-   fires, and continued processing of the well-behaved sensors.
+1. Run the starter below. The aggregator keeps printing values from the well-behaved sensors, 
+but it has no way to tell that the stalled sensor has gone silent — its silence is invisible 
+to the consumer. The operator never finds out that one of the three sensors is dead.
+
+2. Implement the protection inside the aggregator: a per-sensor timeout, a warning log naming 
+the affected sensor when the timeout fires, and continued processing of the well-behaved sensors.
 
 ## Constraints
 

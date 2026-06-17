@@ -14,16 +14,11 @@ sensors cannot make progress at all until it returns.
 
 ## What to do
 
-1. Run the file and observe the symptom yourself. Note the *order* of the
-   print lines and how long the program takes.
-2. Hand the code **and** the *observed* symptom to the AI assistant.
-   Phrase the question yourself based on what you saw, not based on a
-   guess about the cause.
-3. Work with the assistant to find the root cause. Be prepared to answer
-   questions — the assistant may not just hand you the fix.
-4. Apply the fix and verify that all three operations now actually run
-   concurrently (you should see the sensor prints *before* the database
-   save finishes).
+1. Run the file and observe the symptom yourself. Note the order of the print 
+lines and how long the program takes.
+
+2. Fix the pipeline so that all three operations actually run concurrently 
+(you should see the sensor prints before the database save finishes).
 
 ## Constraints
 
