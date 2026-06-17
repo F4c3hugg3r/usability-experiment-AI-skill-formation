@@ -10,8 +10,9 @@ import trio
 # ## 1. Nurseries
 #
 # A nursery is a context manager that groups concurrent tasks. When the
-# context exits, it waits for all started tasks to finish. If any task
-# crashes, the whole nursery cancels all other tasks.
+# context exits, it waits for all started tasks to finish. If any task crashes 
+# (i.e., an exception is raised and not caught inside the task), the whole 
+# nursery cancels all other tasks.
 
 
 async def _worker(name):
